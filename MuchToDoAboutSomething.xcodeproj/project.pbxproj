@@ -13,6 +13,7 @@
 		D789CC481DA06C13001A682C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D789CC461DA06C13001A682C /* Main.storyboard */; };
 		D789CC4A1DA06C13001A682C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D789CC491DA06C13001A682C /* Assets.xcassets */; };
 		D789CC4D1DA06C13001A682C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D789CC4B1DA06C13001A682C /* LaunchScreen.storyboard */; };
+		D789CC551DA0B1D8001A682C /* 2DOAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D789CC541DA0B1D8001A682C /* 2DOAppIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D789CC491DA06C13001A682C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D789CC4C1DA06C13001A682C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D789CC4E1DA06C13001A682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D789CC541DA0B1D8001A682C /* 2DOAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2DOAppIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D789CC461DA06C13001A682C /* Main.storyboard */,
 				D789CC491DA06C13001A682C /* Assets.xcassets */,
 				D789CC4B1DA06C13001A682C /* LaunchScreen.storyboard */,
+				D789CC541DA0B1D8001A682C /* 2DOAppIcon.png */,
 				D789CC4E1DA06C13001A682C /* Info.plist */,
 			);
 			path = MuchToDoAboutSomething;
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D789CC551DA0B1D8001A682C /* 2DOAppIcon.png in Resources */,
 				D789CC4D1DA06C13001A682C /* LaunchScreen.storyboard in Resources */,
 				D789CC4A1DA06C13001A682C /* Assets.xcassets in Resources */,
 				D789CC481DA06C13001A682C /* Main.storyboard in Resources */,
@@ -306,6 +310,7 @@
 				D789CC531DA06C13001A682C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

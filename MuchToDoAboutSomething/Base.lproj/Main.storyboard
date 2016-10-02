@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--To Do List-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MuchToDoAboutSomething" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,16 +21,23 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yOy-R7-YbS">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="659" id="0pE-1E-6tG"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="LFo-pN-fEB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="LFo-pN-fEB">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LFo-pN-fEB" id="Ykz-bk-Zoe">
-                                            <frame key="frameInset" width="414" height="43.666666666666664"/>
+                                            <frame key="frameInset" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="5aI-tm-6bL"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="T3U-bX-2Xu"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,13 +48,16 @@
                             <constraint firstItem="yOy-R7-YbS" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="wgx-7t-0vl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" selectedImage="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="To Do List" image="first" selectedImage="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="table" destination="yOy-R7-YbS" id="gby-Rp-s6G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Second-->
+        <!--Add New Item-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MuchToDoAboutSomething" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,11 +82,17 @@
                                     <constraint firstAttribute="width" constant="29" id="OPf-ph-Fj3"/>
                                 </constraints>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="wRc-ve-ddm"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZEm-C3-Y52">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Get Milk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZEm-C3-Y52">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="9Hb-il-Pij"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,7 +109,10 @@
                             <constraint firstItem="Z1B-zs-6ZU" firstAttribute="top" secondItem="ZEm-C3-Y52" secondAttribute="bottom" constant="24" id="qcq-JZ-hqj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Add New Item" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="itemTextField" destination="ZEm-C3-Y52" id="QEl-Cy-oTu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
