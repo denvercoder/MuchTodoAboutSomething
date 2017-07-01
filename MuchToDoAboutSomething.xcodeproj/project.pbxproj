@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D76B2C491F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B2C481F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.swift */; };
 		D789CC411DA06C13001A682C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789CC401DA06C13001A682C /* AppDelegate.swift */; };
 		D789CC431DA06C13001A682C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789CC421DA06C13001A682C /* FirstViewController.swift */; };
 		D789CC451DA06C13001A682C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789CC441DA06C13001A682C /* SecondViewController.swift */; };
@@ -16,7 +17,20 @@
 		D789CC551DA0B1D8001A682C /* 2DOAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D789CC541DA0B1D8001A682C /* 2DOAppIcon.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D76B2C4B1F0795FB007F21F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D789CC351DA06C13001A682C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D789CC3C1DA06C13001A682C;
+			remoteInfo = MuchToDoAboutSomething;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D76B2C461F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuchToDoAboutSomethingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76B2C481F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuchToDoAboutSomethingUITests.swift; sourceTree = "<group>"; };
+		D76B2C4A1F0795FB007F21F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D789CC3D1DA06C13001A682C /* MuchToDoAboutSomething.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuchToDoAboutSomething.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D789CC401DA06C13001A682C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D789CC421DA06C13001A682C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D76B2C431F0795FB007F21F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D789CC3A1DA06C13001A682C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D76B2C471F0795FB007F21F2 /* MuchToDoAboutSomethingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D76B2C481F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.swift */,
+				D76B2C4A1F0795FB007F21F2 /* Info.plist */,
+			);
+			path = MuchToDoAboutSomethingUITests;
+			sourceTree = "<group>";
+		};
 		D789CC341DA06C13001A682C = {
 			isa = PBXGroup;
 			children = (
 				D789CC3F1DA06C13001A682C /* MuchToDoAboutSomething */,
+				D76B2C471F0795FB007F21F2 /* MuchToDoAboutSomethingUITests */,
 				D789CC3E1DA06C13001A682C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				D789CC3D1DA06C13001A682C /* MuchToDoAboutSomething.app */,
+				D76B2C461F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +105,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D76B2C451F0795FB007F21F2 /* MuchToDoAboutSomethingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76B2C4D1F0795FB007F21F2 /* Build configuration list for PBXNativeTarget "MuchToDoAboutSomethingUITests" */;
+			buildPhases = (
+				D76B2C421F0795FB007F21F2 /* Sources */,
+				D76B2C431F0795FB007F21F2 /* Frameworks */,
+				D76B2C441F0795FB007F21F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76B2C4C1F0795FB007F21F2 /* PBXTargetDependency */,
+			);
+			name = MuchToDoAboutSomethingUITests;
+			productName = MuchToDoAboutSomethingUITests;
+			productReference = D76B2C461F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D789CC3C1DA06C13001A682C /* MuchToDoAboutSomething */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D789CC511DA06C13001A682C /* Build configuration list for PBXNativeTarget "MuchToDoAboutSomething" */;
@@ -96,10 +146,16 @@
 		D789CC351DA06C13001A682C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Denver Coder";
 				TargetAttributes = {
+					D76B2C451F0795FB007F21F2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 88UZ84VZEF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D789CC3C1DA06C13001A682C;
+					};
 					D789CC3C1DA06C13001A682C = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 88UZ84VZEF;
@@ -121,11 +177,19 @@
 			projectRoot = "";
 			targets = (
 				D789CC3C1DA06C13001A682C /* MuchToDoAboutSomething */,
+				D76B2C451F0795FB007F21F2 /* MuchToDoAboutSomethingUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D76B2C441F0795FB007F21F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D789CC3B1DA06C13001A682C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +204,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D76B2C421F0795FB007F21F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76B2C491F0795FB007F21F2 /* MuchToDoAboutSomethingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D789CC391DA06C13001A682C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D76B2C4C1F0795FB007F21F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D789CC3C1DA06C13001A682C /* MuchToDoAboutSomething */;
+			targetProxy = D76B2C4B1F0795FB007F21F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D789CC461DA06C13001A682C /* Main.storyboard */ = {
@@ -172,6 +252,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D76B2C4E1F0795FB007F21F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = MuchToDoAboutSomethingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denvercoder.MuchToDoAboutSomethingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MuchToDoAboutSomething;
+			};
+			name = Debug;
+		};
+		D76B2C4F1F0795FB007F21F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = MuchToDoAboutSomethingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denvercoder.MuchToDoAboutSomethingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MuchToDoAboutSomething;
+			};
+			name = Release;
+		};
 		D789CC4F1DA06C13001A682C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -190,6 +300,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -240,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,6 +406,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D76B2C4D1F0795FB007F21F2 /* Build configuration list for PBXNativeTarget "MuchToDoAboutSomethingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76B2C4E1F0795FB007F21F2 /* Debug */,
+				D76B2C4F1F0795FB007F21F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D789CC381DA06C13001A682C /* Build configuration list for PBXProject "MuchToDoAboutSomething" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
